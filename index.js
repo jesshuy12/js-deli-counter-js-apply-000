@@ -1,4 +1,4 @@
-function takeANumber(CurrentLine,Name) {  
+function takeANumber1(CurrentLine,Name) {  
   CurrentLine.push(Name) 
   return ("Welcome, " + Name + "." + " You are number " + CurrentLine.length + " in line.")
 }
@@ -18,4 +18,9 @@ function currentLine(Line) {
       for(var i = 0; i < Line.length; i++)
       katzDeliLine.push(i+1 + ". " + Line[i])
     return "The line is currently: " + katzDeliLine.join(", ")
-}  
+} 
+Line = 0
+function takeANumber(Line) {
+  Line++
+  return ("You are currently" + Line + ".")
+}
